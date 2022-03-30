@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "LinLibertine_R";
+  src: url('../font/LinLibertine_R.ttf') format('truetype');
+}
+
+body {
+  margin: 0%;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #2f1793;
+}
+
+nav h1 {
+  color: white;
+  padding-left: 10px;
+  font-family: "LinLibertine_R";
+  font-weight: bold;
+}
+
+#items {
+  display: flex;
+  list-style: none;
+  padding: 0px 40px 0px 40px;
+}
+
+#items li {
+  padding: 8px 12px;
+}
+
+.itm {
+  font-family: "LinLibertine_R";
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 100px;
+  margin: 0px 0px 0px 15px;
+  font-family: "LinLibertine_R";
+}
