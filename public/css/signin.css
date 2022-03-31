@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "LinLibertine_R";
+  src: url('../font/LinLibertine_R.ttf') format('truetype');
+}
+
+#signup {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20 40 20 40;
+}
+
+#signup h1 {
+  font-family: "LinLibertine_R";
+  font-weight: bold;
+  font-size: 50px;
+}
+
+#signup p {
+  font-family: "LinLibertine_R";
+  margin: 8px 0px 8px  0px;
+  font-size: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+}
+
+form input {
+  width: 350px;
+  height: 30px;
+  font-family: "LinLibertine_R";
+  font-size: 20px;
+}
+
+form button {
+  margin: 5% 30% 5% 30%;
+  height: 25px;
+  font-family: "LinLibertine_R";
+  font-size: 15px;
+}
