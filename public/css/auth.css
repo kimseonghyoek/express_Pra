@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "LinLibertine_R";
+  src: url('../font/LinLibertine_R.ttf') format('truetype');
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main h1 {
+  text-align: center;
+  font-family: "LinLibertine_R";
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  border: 2.5px solid #2f1793;
+  border-radius: 25px;
+  padding: 15%;
+}
+
+#btns {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  font-family: "LinLibertine_R";
+  font-size: large;
+  margin: 25px;
+}
