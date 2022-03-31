@@ -42,3 +42,8 @@ form button {
   font-family: "LinLibertine_R";
   font-size: 15px;
 }
+
+a {
+  color: #2f1793;
+  text-decoration: none;
+}
