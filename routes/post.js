@@ -22,6 +22,7 @@ router.post("/post", async (req, res, next) => {
       email,
       password,
     });
+    console.log('회원가입 성공!!');
     return res.redirect('/');
   } catch (err) {
     console.log(err);
