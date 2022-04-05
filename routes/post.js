@@ -2,6 +2,8 @@ const express = require("express");
 const { User } = require("../models");
 const router = express.Router();
 const bcrypt = require("bcrypt");
+const passport = require("passport");
+const localST = require("../passport/localStrategy")
 
 router.use(express.urlencoded());
 router.use(express.json());
@@ -15,7 +17,8 @@ router.post("/post", async (req, res, next) => {
   try {
     const exUser = await User.findOne({ where : { email }});
     if(exUser) {
-      return console.error("이메일이 중복됩니다.");
+      console.error("이메일이 중복됩니다.");
+      return res.redirect('auth/signup');
     } 
     await User.create({
       name,
